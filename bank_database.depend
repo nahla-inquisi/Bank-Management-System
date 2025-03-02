@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1740942980 source:e:\all_embedded_all_the_time\c_hands_on_projects\bank_database\main.c
+	<stdio.h>
+	<stdlib.h>
+	"func.h"
+
+1740920647 e:\all_embedded_all_the_time\c_hands_on_projects\bank_database\func.h
+
+1740943296 source:e:\all_embedded_all_the_time\c_hands_on_projects\bank_database\func.c
+	<stdio.h>
+	<string.h>
+	"func.h"
+
