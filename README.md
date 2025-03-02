@@ -1,4 +1,4 @@
-Bank Management System (C Project)
+
 Description
 This is a simple Bank Management System project written in C. It allows users to manage customer data, including creating new customers, editing customer details, transferring money between customers, and deleting customer records.
 
