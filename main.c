@@ -10,7 +10,7 @@ int main() {
     while(option!=6)
     {
         main_menu();
-        printf("Press One Of these following Options: ");
+        printf("Press a Number[1,6] from one of these following Options: ");
         scanf("%i",&option);
         switch(option)
         {
