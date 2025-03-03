@@ -83,7 +83,6 @@ int find_id(customer *ptr,int count)
 void edit_customer(customer *ptr,int count)
 {
     int index=find_id(ptr,count);
-    printf("index of edit=%i",index);
     create_new_customer(ptr,index);
     printf("Editing Customer Done Successfully!\n");
 }
