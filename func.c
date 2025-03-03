@@ -4,7 +4,7 @@
 
 void main_menu()
 {
-    printf("\n\nChoose one of these options:\n1. Enter a new customer.\n2. Print customer data.\n3. Edit customer.\n4. Delete customer data.\n5. Cash transfer from customer to customer.\n6. Exit.\n\n");
+    printf("\n\nChoose one of these Options:\n1. Enter a new customer.\n2. Print customer data.\n3. Edit customer.\n4. Delete customer data.\n5. Cash transfer from customer to customer.\n6. Exit.\n\n");
 }
 
 void unique_id(customer *ptr,int *id,int count)
