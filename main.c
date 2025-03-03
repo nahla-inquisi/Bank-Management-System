@@ -26,8 +26,6 @@ int main() {
             edit_customer(&array_struct[0],id,count);
             break;
         case 4:
-            printf("Enter customer id: ");
-            scanf("%i",&id);
             delete_customer(&array_struct[0],id,&count);
             break;
         case 5:
