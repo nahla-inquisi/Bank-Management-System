@@ -10,7 +10,7 @@ int main() {
     while(option!=6)
     {
         main_menu();
-        printf("Enter one of the above: ");
+        printf("Press One Of these following Options: ");
         scanf("%i",&option);
         switch(option)
         {
@@ -29,7 +29,7 @@ int main() {
             delete_customer(&array_struct[0],id,&count);
             break;
         case 5:
-            printf("Enter cash you want to transfer: ");
+            printf("Enter Cash you want to Transfer: ");
             scanf("%lf",&cash_out);//from sender to receiver
             cash_transfer(&*(array_struct+0),id_sender,id_receiver,count,cash_out);
             break;
