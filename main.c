@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #include "func.h"
 
-int main() {
+int main()
+{
 
     customer array_struct[100];
-    int option=0,count=0,id=0,id_sender=0,id_receiver=0;
-    double cash_out=0;
+    int option=0,count=0;
     while(option!=6)
     {
         main_menu();
@@ -15,25 +15,29 @@ int main() {
         switch(option)
         {
         case 1:
-            create_new_customer(&array_struct[count],count);
+            printf("<<CREATING NEW CUSTOMER!!>>\n");
+            create_new_customer(&array_struct[0],count);
             unique_id((array_struct+0),&array_struct[count].id,count);
             count++;
             break;
         case 2:
-            print_customer(&array_struct[0],id,count);
+            printf("<<PRINTING A SPECIFIC CUSTOMER!!>>\n");
+            print_customer(&array_struct[0],count);
             break;
         case 3:
-            edit_customer(&array_struct[0],id,count);
+            printf("<<EDITING A SPECIFIC CUSTOMER!!>>\n");
+            edit_customer(&array_struct[0],count);
             break;
         case 4:
-            delete_customer(&array_struct[0],id,&count);
+            printf("<<DELETING A SPECIFIC CUSTOMER!!>>\n");
+            delete_customer(&array_struct[0],&count);
             break;
         case 5:
-            printf("Enter Cash you want to Transfer: ");
-            scanf("%lf",&cash_out);//from sender to receiver
-            cash_transfer(&*(array_struct+0),id_sender,id_receiver,count,cash_out);
+            printf("<<CASH TRANSFER BETWEEN TWO SPECIFIC CUSTOMERS!!>>\n");
+            cash_transfer(&*(array_struct+0),count);
             break;
         case 6:
+            printf("<<EXIT PROGRAM SUCCESSFULLY!!>>\n");
             exit(0);
         default:
             printf("This option is not available!");
