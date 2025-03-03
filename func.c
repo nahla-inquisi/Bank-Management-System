@@ -52,6 +52,8 @@ int find_id(customer *ptr,int id,int count)
     do
     {
         scanf("%i",&id);
+        if(id<=0)
+            return -1;
         for(i=0; i<count; i++)
         {
             if((ptr+i)->id==id)
@@ -79,10 +81,15 @@ void edit_customer(customer *ptr,int id,int count)
 void print_customer(customer *ptr,int id,int count)
 {
     int index=find_id(ptr,id,count);
-    printf("Customer %i name:%s\n",index+1,(ptr+index)->name);
-    printf("Customer %i cash:%.2f\n",index+1,(ptr+index)->cash);
-    printf("Customer %i type:%s\n",index+1,(ptr+index)->type);
-    printf("Customer %i id:%i\n\n",index+1,(ptr+index)->id);
+    if(index==-1)
+        printf("No Customer data found!");
+    else
+    {
+        printf("Customer %i name:%s\n",index+1,(ptr+index)->name);
+        printf("Customer %i cash:%.2f\n",index+1,(ptr+index)->cash);
+        printf("Customer %i type:%s\n",index+1,(ptr+index)->type);
+        printf("Customer %i id:%i\n\n",index+1,(ptr+index)->id);
+    }
 }
 
 
