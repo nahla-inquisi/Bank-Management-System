@@ -130,4 +130,5 @@ void cash_transfer(customer *ptr,int id_sender,int id_receiver,int count,double 
         }
     }
     while(flag);
+    printf("Cash Transfer Operation Done Successfully!\n");
 }
