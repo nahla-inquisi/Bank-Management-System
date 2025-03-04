@@ -16,25 +16,25 @@ int main()
         {
         case 1:
             printf("<<CREATING NEW CUSTOMER!!>>\n");
-            create_new_customer(&array_struct[0],count);
+            create_new_customer((array_struct+0),count);
             unique_id((array_struct+0),&array_struct[count].id,count);
             count++;
             break;
         case 2:
             printf("<<PRINTING A SPECIFIC CUSTOMER!!>>\n");
-            print_customer(&array_struct[0],count);
+            print_customer((array_struct+0),count);
             break;
         case 3:
             printf("<<EDITING A SPECIFIC CUSTOMER!!>>\n");
-            edit_customer(&array_struct[0],count);
+            edit_customer((array_struct+0),count);
             break;
         case 4:
             printf("<<DELETING A SPECIFIC CUSTOMER!!>>\n");
-            delete_customer(&array_struct[0],&count);
+            delete_customer((array_struct+0),&count);
             break;
         case 5:
             printf("<<CASH TRANSFER BETWEEN TWO SPECIFIC CUSTOMERS!!>>\n");
-            cash_transfer(&*(array_struct+0),count);
+            cash_transfer((array_struct+0),count);
             break;
         case 6:
             printf("<<EXIT PROGRAM SUCCESSFULLY!!>>\n");
